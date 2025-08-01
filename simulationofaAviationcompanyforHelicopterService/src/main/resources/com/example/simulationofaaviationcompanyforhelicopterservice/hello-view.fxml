@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulationofaaviationcompanyforhelicopterservice.MaintenanceController">
+   <children>
+      <Label fx:id="pilotWelcomeLabel" layoutX="39.0" layoutY="27.0" prefHeight="78.0" prefWidth="286.0" text="             Welcome Pilot">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="viewScheduleButton" layoutX="29.0" layoutY="106.0" mnemonicParsing="false" onAction="#onViewScheduleClicked" prefHeight="54.0" prefWidth="139.0" text="View Schedule">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewScheduleButton" layoutX="183.0" layoutY="106.0" mnemonicParsing="false" onAction="#onViewScheduleClicked" prefHeight="54.0" prefWidth="139.0" text="Submit Report">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TableView fx:id="pilotWelcomeLabel" layoutX="33.0" layoutY="172.0" prefHeight="200.0" prefWidth="298.0">
+        <columns>
+          <TableColumn prefWidth="297.6000122070312" text="show Flights" />
+        </columns>
+      </TableView>
+      <Button fx:id="viewScheduleButton" layoutX="98.0" layoutY="387.0" mnemonicParsing="false" onAction="#onViewScheduleClicked" prefHeight="54.0" prefWidth="139.0" text="Log Out">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="maintenanceStatusLabel" layoutX="445.0" layoutY="27.0" prefHeight="78.0" prefWidth="286.0" text="Maintenace Manager">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="handleMaintenanceButtonClick" layoutX="375.0" layoutY="106.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="139.0" text="View Maintenance log">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="handleMaintenanceButtonClick" layoutX="561.0" layoutY="106.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="139.0" text="Request Parts">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView layoutX="384.0" layoutY="172.0" prefHeight="200.0" prefWidth="298.0">
+         <columns>
+            <TableColumn fx:id="maintenanceTable" prefWidth="297.6000122070312" text="For Task" />
+         </columns>
+      </TableView>
+      <Button fx:id="handleMaintenanceButtonClick" layoutX="472.0" layoutY="393.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="139.0" text="Log Out">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
