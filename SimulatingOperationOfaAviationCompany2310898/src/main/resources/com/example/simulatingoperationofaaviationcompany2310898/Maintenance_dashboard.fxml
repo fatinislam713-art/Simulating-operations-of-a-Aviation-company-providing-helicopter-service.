@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simulatingoperationofaaviationcompany2310898.MaintenanceDashboard"
+            prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane>
+        <?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.scene.control.*?>
+        <?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simulatingoperationofaaviationcompany2310898.MaintenanceController"
+            prefWidth="600" prefHeight="400">
+
+<Label fx:id="maintenanceWelcomeLabel" layoutX="20" layoutY="20" text="Welcome Maintenance Manager" />
+
+<Button fx:id="viewLogsBtn" layoutX="20" layoutY="60" text="View Maintenance Logs" onAction="#onViewLogsClicked" />
+
+<Button fx:id="requestPartsBtn" layoutX="20" layoutY="110" text="Request Parts" onAction="#onRequestPartsClicked" />
+
+<!-- Add TableView and other controls as needed -->
+
+</AnchorPane>
