@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.helicopterservice.TechnicalEngineer.ensure_air_worthiness">
+   <children>
+      <TextField fx:id="helicopterIdField" layoutX="133.0" layoutY="35.0" />
+      <TextArea fx:id="systemStatusArea" layoutX="24.0" layoutY="116.0" prefHeight="76.0" prefWidth="200.0" />
+      <ComboBox fx:id="faultTypeCombo" layoutX="423.0" layoutY="35.0" prefWidth="150.0" />
+      <Text layoutX="24.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Helicopter ID" />
+      <Text layoutX="24.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Describe current system status or issues" wrappingWidth="234.0" />
+      <Text layoutX="353.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fault Type" wrappingWidth="58.306640625" />
+      <DatePicker fx:id="lastCheckDatePicker" layoutX="423.0" layoutY="84.0" />
+      <Text layoutX="295.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Maintenance Date" wrappingWidth="174.0" />
+      <Button layoutX="327.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleRoutineCheckBtn" prefHeight="25.0" prefWidth="162.0" text="Run Routine Check" />
+      <Button layoutX="327.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleScheduleMaintBtn" prefHeight="25.0" prefWidth="162.0" text="Schedule Maintenance" />
+      <Button layoutX="327.0" layoutY="212.0" mnemonicParsing="false" onAction="#handleRepairFaultBtn" prefHeight="25.0" prefWidth="162.0" text="Repair Fault" />
+   </children>
+</AnchorPane>
