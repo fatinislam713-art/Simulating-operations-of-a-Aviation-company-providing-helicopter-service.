@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="10"
+      fx:controller="com.example.helicopterservice_2321523.controller.AccountantController">
+
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Accountant Workspace"/>
+    <HBox spacing="10">
+        <TextField fx:id="txtAccountantName" promptText="Accountant Name"/>
+        <TextField fx:id="txtAccountantId" promptText="ID"/>
+        <Button text="Init User" onAction="#onInitUser"/>
+    </HBox>
+
+    <TitledPane text="Goal 1: Monthly Financial Reporting" expanded="false">
+        <content>
+            <VBox spacing="8">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Event 1: Collect transaction data" onAction="#onCollectTransactionData"/>
+                <Button text="Event 3: Generate income &amp; ops cost reports" onAction="#onGenerateIncomeAndOpsCost"/>
+                <Button text="Event 4: Conduct internal financial reviews" onAction="#onConductInternalReviews"/>
+                <Button text="Event 5: Submit monthly reports" onAction="#onSubmitMonthlyReports"/>
+            </VBox>
+        </content>
+    </TitledPane>
+
+    <TitledPane text="Goal 2: Process Payroll (pilots, engineers, ground crew)" expanded="false">
+        <content>
+            <VBox spacing="8">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Event 1: Collect shift logs &amp; attendance" onAction="#onCollectShiftLogs"/>
+                <Button text="Event 2: Calculate salaries, hazard pay, deductions" onAction="#onComputePayroll"/>
+                <Button text="Event 3: Generate pay slips &amp; tax forms" onAction="#onGeneratePayslips"/>
+                <Button text="Event 4: Get HR/Operations approval" onAction="#onRequestPayrollApproval"/>
+                <Button text="Event 5: Transfer salaries &amp; bonuses" onAction="#onExecutePayrollTransfer"/>
+            </VBox>
+        </content>
+    </TitledPane>
+
+    <TitledPane text="Goal 3: Budget planning for helicopter operations" expanded="false">
+        <content>
+            <VBox spacing="8">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Event 1: Review previous budget &amp; actuals" onAction="#onBudgetReview"/>
+                <Button text="Event 2: Collect forecasts (Ops/Maint/HR)" onAction="#onBudgetCollectForecasts"/>
+                <Button text="Event 3: Draft budget proposals (fleet/staffing)" onAction="#onBudgetDraftProposals"/>
+                <Button text="Event 4: Finalize &amp; submit annual budget" onAction="#onBudgetFinalizeAndSubmit"/>
+            </VBox>
+        </content>
+    </TitledPane>
+
+    <TitledPane text="Goal 4: Track &amp; report helicopter operation costs" expanded="false">
+        <content>
+            <VBox spacing="8">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Event 1: Record fuel/maint/flight-hour expenses" onAction="#onOpsCostRecordExpenses"/>
+                <Button text="Event 2: Allocate by helicopter/route/client" onAction="#onOpsCostAllocate"/>
+                <Button text="Event 3: Create detailed cost reports per aircraft" onAction="#onOpsCostCreateReports"/>
+                <Button text="Event 4: Present to operations mgmt" onAction="#onOpsCostPresentReports"/>
+            </VBox>
+        </content>
+    </TitledPane>
+
+    <Label text="Output / Logs"/>
+    <TextArea fx:id="txtOutput" prefRowCount="10" wrapText="true"/>
+
+</VBox>

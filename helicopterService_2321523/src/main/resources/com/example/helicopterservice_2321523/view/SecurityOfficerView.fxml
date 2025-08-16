@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="10"
+      fx:controller="com.example.helicopterservice_2321523.controller.SecurityOfficerController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <Label text="Security Officer Console"/>
+    <HBox spacing="10">
+        <TextField fx:id="txtOfficerName" promptText="Officer Name"/>
+        <TextField fx:id="txtOfficerId" promptText="ID"/>
+        <Button text="Init User" onAction="#onInitUser"/>
+    </HBox>
+
+    <TitledPane text=" Secure access to helipads" expanded="false">
+        <content>
+            <VBox spacing="8">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Event 1: Monitor helipads (CCTV/patrols)" onAction="#onMonitorHelipad"/>
+                <Button text="Event 2: Verify ID &amp; clearance" onAction="#onVerifyAccess"/>
+                <Button text="Event 3: Baggage checks" onAction="#onBaggageInspection"/>
+                <Button text="Event 4: Report &amp; escalate unauthorized access" onAction="#onReportUnauthorizedAccess"/>
+            </VBox>
+        </content>
+    </TitledPane>
+
+    <TitledPane text=" Safety &amp; security during operations" expanded="false">
+        <content>
+            <VBox spacing="8">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Event 1: Pre-flight security briefing" onAction="#onPreFlightBriefing"/>
+                <Button text="Event 2: Supervise boarding &amp; protocols" onAction="#onSuperviseBoarding"/>
+                <Button text="Event 3: Handle emergencies/suspicious activity" onAction="#onHandleEmergencies"/>
+                <Button text="Event 4: Log activities &amp; handover" onAction="#onLogAndHandover"/>
+            </VBox>
+        </content>
+    </TitledPane>
+
+    <TitledPane text=" Compliance with aviation security regulations" expanded="false">
+        <content>
+            <VBox spacing="8">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Event 1: Review updated guidelines" onAction="#onReviewGuidelines"/>
+                <Button text="Event 2: Routine audits of practices" onAction="#onConductAudits"/>
+                <Button text="Event 3: Train ground staff &amp; crew" onAction="#onConductTraining"/>
+                <Button text="Event 4: Submit audit reports" onAction="#onSubmitAuditReports"/>
+            </VBox>
+        </content>
+    </TitledPane>
+
+    <TitledPane text=" Control access to restricted zones" expanded="false">
+        <content>
+            <VBox spacing="8">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Event 1: Issue access badges" onAction="#onIssueBadges"/>
+                <Button text="Event 2: Check logs &amp; CCTV" onAction="#onCheckAccessLogs"/>
+                <Button text="Event 3: Revoke expired/suspended credentials" onAction="#onRevokeAccess"/>
+                <Button text="Event 4: Surprise inspections" onAction="#onSurpriseInspections"/>
+            </VBox>
+        </content>
+    </TitledPane>
+
+    <TitledPane text=" Maintain security equipment &amp; readiness" expanded="false">
+        <content>
+            <VBox spacing="8">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <Button text="Event 1: Test alarms &amp; comms" onAction="#onTestAlarms"/>
+                <Button text="Event 2: Inspect extinguishers, scanners" onAction="#onInspectEquipment"/>
+                <Button text="Event 3: Log status &amp; request replacements" onAction="#onLogEquipmentStatus"/>
+                <Button text="Event 4: Replace/repair surveillance gear" onAction="#onRepairGear"/>
+                <Button text="Event 5: Calibrate detectors/scanners" onAction="#onCalibrateScanners"/>
+            </VBox>
+        </content>
+    </TitledPane>
+
+    <Label text="Output / Logs"/>
+    <TextArea fx:id="txtOutput" prefRowCount="10" wrapText="true"/>
+
+</VBox>

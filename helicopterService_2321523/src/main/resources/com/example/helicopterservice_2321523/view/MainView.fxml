@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.helicopterservice_2321523.controller.MainController">
+
+    <top>
+        <ToolBar>
+            <Button text="Reload" onAction="#onReload"/>
+            <Separator/>
+            <Label text="HeliOps — Aviation Company Simulator"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="About" onAction="#onAbout"/>
+        </ToolBar>
+    </top>
+
+    <center>
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Accountant">
+                    <content>
+                        <fx:include source="AccountantView.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Security Officer">
+                    <content>
+                        <fx:include source="SecurityOfficerView.fxml"/>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>
