@@ -14,4 +14,6 @@ public class Login {
     private Button signup_button;
     @javafx.fxml.FXML
     private Button signin_button;
+    @javafx.fxml.FXML
+    private CheckBox notRobotBox;
 }

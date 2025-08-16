@@ -46,6 +46,10 @@ public class BuyTicket
     private TableColumn AvailabilityTable;
     @javafx.fxml.FXML
     private Button BuyTicket;
+    @javafx.fxml.FXML
+    private DatePicker date;
+    @javafx.fxml.FXML
+    private TableColumn timeTable1;
 
     @javafx.fxml.FXML
     public void initialize() {
