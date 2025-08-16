@@ -1,9 +1,6 @@
 package com.example.air_plan_customer_service_agent_and_passengers_2222122;
 
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 
 public class BuyTicket
 {
