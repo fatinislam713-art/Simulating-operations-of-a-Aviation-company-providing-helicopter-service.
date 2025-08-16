@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="633.0" prefWidth="890.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PilotDashboardController">
+   <children>
+      <Label layoutX="109.0" layoutY="50.0" prefHeight="38.0" prefWidth="649.0" text="                        Pilot Dashboard">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <VBox layoutX="104.0" layoutY="127.0" prefHeight="378.0" prefWidth="668.0">
+         <children>
+            <Button fx:id="btnFlightPlan" mnemonicParsing="false" prefHeight="78.0" prefWidth="666.0" text="View Flight Plan" />
+            <Button fx:id="btnFuelRoute" layoutX="10.0" layoutY="52.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="667.0" text="Fuel and Root Optimization" />
+            <Button fx:id="btnEmergency" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleFlightPlan" prefHeight="112.0" prefWidth="668.0" text="Emergency protocol" />
+            <Button fx:id="btnPostReport" layoutX="10.0" layoutY="95.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="668.0" text="Post-Flight Report" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

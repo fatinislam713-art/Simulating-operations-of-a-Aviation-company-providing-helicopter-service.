@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="585.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AssignTechniciancontroller">
+   <children>
+      <Label layoutX="178.0" layoutY="27.0" prefHeight="52.0" prefWidth="362.0" text="      Assign Technican Task">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aircraftIdField" layoutX="210.0" layoutY="112.0" prefHeight="44.0" prefWidth="314.0" text="                                        Aircraft ID" />
+      <TextArea fx:id="taskDescriptionArea" layoutX="209.0" layoutY="177.0" prefHeight="202.0" prefWidth="322.0" text="                                  Task Description" />
+      <ComboBox fx:id="technicianCombo" layoutX="212.0" layoutY="401.0" prefHeight="44.0" prefWidth="322.0" promptText="Select Technician" />
+      <Button fx:id="assignTaskButton" layoutX="210.0" layoutY="489.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="322.0" text="Assign Task" />
+   </children>
+</AnchorPane>

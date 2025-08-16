@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="599.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReportIssueController">
+   <children>
+      <Label layoutX="162.0" layoutY="51.0" prefHeight="59.0" prefWidth="474.0" text="                         Report Technical Issue">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aircraftField" layoutX="195.0" layoutY="135.0" prefHeight="26.0" prefWidth="402.0" text="                                                     Aircraft ID" />
+      <TextArea fx:id="issuedescriptionArea" layoutX="200.0" layoutY="200.0" prefHeight="200.0" prefWidth="402.0" text="                                            Issue Description" />
+      <Button fx:id="submitIssueButton" layoutX="205.0" layoutY="452.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="402.0" text="Submit" />
+   </children>
+</AnchorPane>
